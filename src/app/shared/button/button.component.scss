@@ -1,0 +1,43 @@
+@import "../../../variables.scss";
+
+.btn {
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  background: $default-active-button;
+  color: $default-button-color;
+}
+
+.btn-primary-regular {
+  @extend .btn;
+  height: 35px;
+  width: 120px;
+  font-size: 14px;
+}
+
+.btn-primary-big {
+  @extend .btn;
+  height: 50px;
+  width: 170px;
+  font-weight: bold;
+}
+
+.btn-secondary-regular {
+  @extend .btn-primary-regular;
+  background: $default-disabled-button;
+}
+
+.btn-secondary-big {
+  @extend .btn-primary-big;
+  background: $default-disabled-button;
+}
+
+.btn-primary-regular:active, .btn-primary-big:active {
+  background: $default-active-button;
+  box-shadow: $default-box-shadow-button;
+}
+
+.btn-secondary-regular:active {
+  background: $default-disabled-button;
+  box-shadow: $default-box-shadow-button;
+}

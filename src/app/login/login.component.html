@@ -1,0 +1,31 @@
+<!--<app-button value="Login" className="btn-primary-regular"></app-button>-->
+<!--<app-button value="Login" className="btn-primary-big"></app-button>-->
+<!--<app-button value="Login" className="btn-primary-regular" appDisabled></app-button>-->
+<!--<app-button value="Login" className="btn-primary-big" appDisabled></app-button>-->
+<!--<app-button value="Login" className="btn-secondary-regular"></app-button>-->
+<!--<app-button value="Login" className="btn-secondary-big" appDisabled></app-button>-->
+
+<div class="login-popup-container">
+  <div class="login-popup-window">
+    <div class="login-popup-window__header">
+      <p>Login to "Demo Shop"</p>
+    </div>
+    <div class="login-popup-window__content">
+      <form>
+        <div class="login-popup__form-group">
+          <label class="form-group__label" for="login">Your login:</label>
+          <input type="text" id="login" minlength="7" maxlength="12">
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="login-popup__form-group">
+          <label class="form-group__label" for="password">Your password:</label>
+          <input type="password" id="password" minlength="5" maxlength="12">
+          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="login-popup__form-group submit-area">
+          <app-button value="Submit" className="btn-primary-big"></app-button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
